@@ -10,6 +10,8 @@ const pluginOptions: Partial<AutoloadPluginOptions> = {
   // Place your custom options the autoload plugin below here.
 }
 
+console.log(process.env);
+
 fastify.register(AutoLoad, {
   dir: join(__dirname, 'plugins'),
   options: pluginOptions
